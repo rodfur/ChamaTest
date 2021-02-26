@@ -15,9 +15,6 @@ class PlacesRepository {
         type: String,
         key: String
     ): OperationResult<List<PlaceDTO>> {
-        var mock = PlacesMockedRespository()
-        return mock.getPlaces()
-
         var operationResult =
             OperationResult<List<PlaceDTO>>(
                 status = OperationResult.OperationResultStatus.UNDEFINED
